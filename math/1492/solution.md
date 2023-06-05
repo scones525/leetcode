@@ -39,7 +39,7 @@ run time : win 39.11%   Memory : win 39.43%
 ### 問題3.
 因為調用C++ sort，時間複雜度為nlogn，仍有改善空間。
 
-# 別人的作法 votrubac
+# 更新做法2
 從k這邊開始下手，從小到大去找出n的因數、每找一個就k--。
 
 code : 
