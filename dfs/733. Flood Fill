@@ -1,3 +1,10 @@
+# [336. 回文对](https://leetcode.cn/problems/palindrome-pairs)
+
+[English Version](/solution/0300-0399/0336.Palindrome%20Pairs/README_EN.md)
+
+## 题目描述
+
+
 題目理解 : 將當前給定sr、sc周圍的非0元素都改變成當前image[sr][sc]的color
 
 最直接想到DFS作法 : 由row-1、col-1、row+1、col+1四個方位去查找是否有相同的color，
