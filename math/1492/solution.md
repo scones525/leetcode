@@ -1,5 +1,6 @@
 題目敘述 :給兩個正整數 n、k，並且找出n所有因數中的第K的因數。
 
+# 我的作法
 想法 :窮舉所有n的因數、進行排序後再返回第K大的因數
 
 code : 
@@ -37,6 +38,28 @@ run time : win 39.11%   Memory : win 39.43%
 
 ### 問題3.
 因為調用C++ sort，時間複雜度為nlogn，仍有改善空間。
+
+# 別人的作法 votrubac
+從k這邊開始下手，從小到大去找出n的因數、每找一個就k--。
+
+code : 
+```c++
+class Solution {
+public:
+    int kthFactor(int n, int k) {
+        int d;
+        for(d = 1; d <= n ; d++){
+            if(d*d == n && k == 1)return d;
+            else if(n % d == 0 && --k == 0){
+                return d;
+            }
+        }
+        return -1;
+    }
+};
+```
+run time : win 100%   Memory : win 39.43%
+
 
 
 
